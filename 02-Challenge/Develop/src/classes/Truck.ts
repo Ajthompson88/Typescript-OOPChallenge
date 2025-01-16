@@ -1,12 +1,7 @@
 import Vehicle from './Vehicle.js';
-import Car from './Car.js';
-import Motorbike from './Motorbike.js';
 import Wheel from './Wheel.js';
 
 class Truck extends Vehicle {
-    override vin: string;
-    override make: string;
-    override model: string;
     color: string;
     year: number;
     weight: number;
@@ -25,11 +20,8 @@ class Truck extends Vehicle {
         wheels: Wheel[],
         towingCapacity: number,
     ) {
-        super(vin, make, model);
-        this.vin = vin;
+        super(vin, make, model, 'Truck');
         this.color = color;
-        this.make = make;
-        this.model = model;
         this.year = year;
         this.weight = weight;
         this.topSpeed = topSpeed;
@@ -38,11 +30,7 @@ class Truck extends Vehicle {
     }
 
     tow(vehicle: Vehicle): void {
-        if (vehicle instanceof Car || vehicle instanceof Truck || vehicle instanceof Motorbike) {
-            console.log(`${this.make} ${this.model} is towing a ${vehicle.make} ${vehicle.model}`);
-        } else {
-            console.log('Cannot tow this type of vehicle.');
-        }
+        console.log(`${this.make} ${this.model} is towing a ${vehicle.make} ${vehicle.model}`);
     }
 }
 

@@ -9,14 +9,16 @@ class Vehicle implements Driveable {
   vin: string;
   make: string;
   model: string;
+  type: string;
 
   // Constructor for the Vehicle class
-  constructor(vin: string, make: string, model: string) {
+  constructor(vin: string, make: string, model: string, type: string) {
     this.started = false;
     this.currentSpeed = 0;
     this.vin = vin;
     this.make = make;
     this.model = model;
+    this.type = type;
   }
 
   // Method to print vehicle details

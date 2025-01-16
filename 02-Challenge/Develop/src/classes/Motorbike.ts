@@ -2,9 +2,6 @@ import Vehicle from './Vehicle.js';
 import Wheel from './Wheel.js';
 
 class Motorbike extends Vehicle {
-    override vin: string;
-    override make: string;
-    override model: string;
     color: string;
     year: number;
     weight: number;
@@ -21,15 +18,12 @@ class Motorbike extends Vehicle {
         topSpeed: number,
         wheels: Wheel[],
     ) {
-        super(vin, make, model);
-        this.vin = vin;
+        super(vin, make, model, 'Motorbike');
         this.color = color;
-        this.make = make;
-        this.model = model;
         this.year = year;
         this.weight = weight;
         this.topSpeed = topSpeed;
-        this.wheels = wheels.length === 2 ? wheels : [new Wheel(), new Wheel()];
+        this.wheels = wheels;
     }
 
     performWheelie(): void {
