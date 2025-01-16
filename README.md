@@ -1,4 +1,3 @@
-
 # Typescript-OOPChallenge
 
 ## Table of Contents
@@ -18,7 +17,9 @@ You will need node.js and inquirer to run this application
 
 ## Usage
 
-[📺 Watch the usage demo video](./assets/usage.mp4)
+[📺 Watch the Video Demo](https://drive.google.com/file/d/1y15p50k34kp2iQxc8L50wNYWRsdw_gG1/view)
+
+*Click the link above to watch a demonstration of the application's functionality*
 
 ## Questions
 For any questions, please contact me at:
