@@ -18,7 +18,7 @@ You will need node.js and inquirer to run this application
 
 ## Usage
 
-[📺 Watch the usage demo video](./assets/usage.mp4)
+<iframe src="https://drive.google.com/file/d/1y15p50k34kp2iQxc8L50wNYWRsdw_gG1/preview" width="640" height="480"></iframe>
 
 ## Questions
 For any questions, please contact me at:
