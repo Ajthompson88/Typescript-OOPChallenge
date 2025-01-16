@@ -1,0 +1,107 @@
+[
+  {
+    "vin": "ivwu6asyl4q9nikgu7p5y",
+    "color": "Matte Black",
+    "make": "Indian",
+    "model": "Scout Sixty Bobber",
+    "year": 2025,
+    "weight": 536,
+    "topSpeed": 96,
+    "wheels": [
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      }
+    ],
+    "type": "Motorbike"
+  },
+  {
+    "vin": "vd8h246y0gwzs7wm04p8c",
+    "color": "red",
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2021,
+    "weight": 5000,
+    "topSpeed": 120,
+    "wheels": [
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      }
+    ],
+    "towingCapacity": 10000,
+    "type": "Truck"
+  },
+  {
+    "vin": "2t9suwyzpniq550cfzg2ye",
+    "color": "blue",
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2021,
+    "weight": 3000,
+    "topSpeed": 130,
+    "wheels": [
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      }
+    ],
+    "type": "Car"
+  },
+  {
+    "vin": "cf7xx6r904jts1nyzkf5dj",
+    "color": "Dark Navy Blue",
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 1964,
+    "weight": 3500,
+    "topSpeed": 100,
+    "wheels": [
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      }
+    ],
+    "type": "Car"
+  }
+]
