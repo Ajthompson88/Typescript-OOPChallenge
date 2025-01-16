@@ -9,6 +9,10 @@ class Truck extends Vehicle {
         this.wheels = wheels;
         this.towingCapacity = towingCapacity;
     }
+    start() {
+        super.start();
+        console.log(`${this.make} ${this.model} truck is starting.`);
+    }
     tow(vehicle) {
         console.log(`${this.make} ${this.model} is towing a ${vehicle.make} ${vehicle.model}`);
     }

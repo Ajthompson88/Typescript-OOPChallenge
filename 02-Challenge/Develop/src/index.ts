@@ -9,17 +9,7 @@ import Cli from "./classes/Cli.js";
 const vehicles: (Car | Truck | Motorbike)[] = [];
 
 // Create a truck with default wheels
-const truck1 = new Truck(
-Cli.generateVin(), 
-"red", 
-"Ford", 
-"F-150", 
-2021, 
-5000, 
-120, 
-[new Wheel(), new Wheel(), new Wheel(), new Wheel()],
- 10000
-);
+const truck1 = new Truck(Cli.generateVin(), "red", "Ford", "F-150", 2021, 5000, 120, [new Wheel(), new Wheel(), new Wheel(), new Wheel()], 10000);
 
 // Create a car with default wheels
 const car1 = new Car(

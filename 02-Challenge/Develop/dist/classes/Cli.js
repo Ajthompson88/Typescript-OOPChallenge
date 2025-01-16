@@ -10,6 +10,7 @@ class Cli {
         this.selectedVehicleVin = '';
         this.exit = false;
         this.vehicles = loadVehicles();
+        console.log('Loaded vehicles:', this.vehicles);
     }
     static generateVin() {
         return (Math.random().toString(36).substring(2, 15) +
@@ -127,6 +128,7 @@ class Cli {
                 const car = new Car(carDetails.vin, carDetails.color, carDetails.make, carDetails.model, carDetails.year, carDetails.weight, carDetails.topSpeed, carDetails.wheels);
                 this.vehicles.push(car);
                 saveVehicles(this.vehicles);
+                console.log('Saved vehicles:', this.vehicles);
                 writeResponseToFile(`Created Car: ${JSON.stringify(carDetails, null, 2)}`);
                 this.startCli();
             });
@@ -188,6 +190,7 @@ class Cli {
                 const truck = new Truck(truckDetails.vin, truckDetails.color, truckDetails.make, truckDetails.model, truckDetails.year, truckDetails.weight, truckDetails.topSpeed, truckDetails.wheels, truckDetails.towingCapacity);
                 this.vehicles.push(truck);
                 saveVehicles(this.vehicles);
+                console.log('Saved vehicles:', this.vehicles);
                 writeResponseToFile(`Created Truck: ${JSON.stringify(truckDetails, null, 2)}`);
                 this.startCli();
             });
@@ -243,6 +246,7 @@ class Cli {
                 const motorbike = new Motorbike(motorbikeDetails.vin, motorbikeDetails.color, motorbikeDetails.make, motorbikeDetails.model, motorbikeDetails.year, motorbikeDetails.weight, motorbikeDetails.topSpeed, motorbikeDetails.wheels);
                 this.vehicles.push(motorbike);
                 saveVehicles(this.vehicles);
+                console.log('Saved vehicles:', this.vehicles);
                 writeResponseToFile(`Created Motorbike: ${JSON.stringify(motorbikeDetails, null, 2)}`);
                 this.startCli();
             });

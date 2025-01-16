@@ -8,6 +8,10 @@ class Motorbike extends Vehicle {
         this.topSpeed = topSpeed;
         this.wheels = wheels;
     }
+    start() {
+        super.start();
+        console.log(`${this.make} ${this.model} motorbike is starting.`);
+    }
     performWheelie() {
         console.log(`${this.make} ${this.model} is performing a wheelie!`);
     }

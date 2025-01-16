@@ -103,5 +103,82 @@
       }
     ],
     "type": "Car"
+  },
+  {
+    "vin": "cpt6pj7cd0e26lzm4b20bg",
+    "color": "Black",
+    "make": "Chevrolet",
+    "model": "Impala",
+    "year": 1967,
+    "weight": 3500,
+    "topSpeed": 110,
+    "wheels": [
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      }
+    ],
+    "type": "Car"
+  },
+  {
+    "vin": "yijmo73hr6sl4jek8kxg9p",
+    "color": "gray",
+    "make": "Chevrolet",
+    "model": "Silverado",
+    "year": 2021,
+    "weight": 7100,
+    "topSpeed": 96,
+    "wheels": [
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      }
+    ],
+    "towingCapacity": 11400,
+    "type": "Truck"
+  },
+  {
+    "vin": "hgtkg7xttliyou4qfgm1e",
+    "color": "Red",
+    "make": "Harley Davidson",
+    "model": "Street Bob 114",
+    "year": 2025,
+    "weight": 655,
+    "topSpeed": 100,
+    "wheels": [
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      },
+      {
+        "diameter": 18,
+        "tireBrand": "GoodYear"
+      }
+    ],
+    "type": "Motorbike"
   }
 ]

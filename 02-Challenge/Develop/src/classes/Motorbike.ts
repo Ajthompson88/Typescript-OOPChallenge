@@ -26,6 +26,11 @@ class Motorbike extends Vehicle {
         this.wheels = wheels;
     }
 
+    override start(): void {
+        super.start();
+        console.log(`${this.make} ${this.model} motorbike is starting.`);
+    }
+
     performWheelie(): void {
         console.log(`${this.make} ${this.model} is performing a wheelie!`);
     }

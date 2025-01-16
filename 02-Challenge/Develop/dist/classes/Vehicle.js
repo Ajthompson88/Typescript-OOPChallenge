@@ -1,6 +1,4 @@
-// Vehicle class that implements Driveable interface
 class Vehicle {
-    // Constructor for the Vehicle class
     constructor(vin, make, model, type) {
         this.started = false;
         this.currentSpeed = 0;
@@ -9,69 +7,27 @@ class Vehicle {
         this.model = model;
         this.type = type;
     }
-    // Method to print vehicle details
-    printDetails() {
-        console.log(`Vehicle started: ${this.started}`);
-        console.log(`Vehicle current speed: ${this.currentSpeed} mph`);
-    }
-    // Method to start the vehicle
     start() {
         this.started = true;
-        console.log('Vehicle started');
+        console.log(`${this.make} ${this.model} is starting.`);
     }
-    // Method to accelerate the vehicle
-    accelerate(change) {
-        // Check if the vehicle is started
-        if (this.started) {
-            this.currentSpeed += change;
-            console.log(`Vehicle accelerated to ${this.currentSpeed} mph`);
-            console.log(`${this.make} ${this.model} is accelerating by ${change} MPH.`);
-        }
-        else {
-            console.log('Start the vehicle first');
-        }
+    accelerate(amount) {
+        this.currentSpeed += amount;
+        console.log(`${this.make} ${this.model} is accelerating by ${amount} MPH.`);
     }
-    // Method to decelerate the vehicle
-    decelerate(change) {
-        // Check if the vehicle is started
-        if (this.started) {
-            this.currentSpeed -= change;
-            console.log(`Vehicle decelerated to ${this.currentSpeed} mph`);
-            console.log(`${this.make} ${this.model} is decelerating by ${change} MPH.`);
-        }
-        else {
-            console.log('Start the vehicle first');
-        }
+    decelerate(amount) {
+        this.currentSpeed = Math.max(0, this.currentSpeed - amount);
+        console.log(`${this.make} ${this.model} is decelerating by ${amount} MPH.`);
     }
-    // Method to stop the vehicle
     stop() {
         this.currentSpeed = 0;
-        this.started = false;
-        console.log('Vehicle stopped');
         console.log(`${this.make} ${this.model} has stopped.`);
     }
-    // Method to turn the vehicle
     turn(direction) {
-        // Check if the vehicle is started
-        if (this.started) {
-            console.log(`Vehicle turned ${direction}`);
-            console.log(`${this.make} ${this.model} is turning ${direction}.`);
-        }
-        else {
-            console.log('Start the vehicle first');
-        }
+        console.log(`${this.make} ${this.model} is turning ${direction}.`);
     }
-    // Method to reverse the vehicle
     reverse() {
-        // Check if the vehicle is started
-        if (this.started) {
-            console.log('Vehicle reversed');
-            console.log(`${this.make} ${this.model} is reversing.`);
-        }
-        else {
-            console.log('Start the vehicle first');
-        }
+        console.log(`${this.make} ${this.model} is reversing.`);
     }
 }
-// Export the Vehicle class
 export default Vehicle;

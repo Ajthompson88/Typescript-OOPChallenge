@@ -1,7 +1,8 @@
 import Vehicle from './Vehicle.js';
 import Wheel from './Wheel.js';
+import { AbleToTow } from '../interfaces/AbleToTow.js';
 
-class Truck extends Vehicle {
+class Truck extends Vehicle implements AbleToTow {
     color: string;
     year: number;
     weight: number;
@@ -27,6 +28,11 @@ class Truck extends Vehicle {
         this.topSpeed = topSpeed;
         this.wheels = wheels;
         this.towingCapacity = towingCapacity;
+    }
+
+    override start(): void {
+        super.start();
+        console.log(`${this.make} ${this.model} truck is starting.`);
     }
 
     tow(vehicle: Vehicle): void {

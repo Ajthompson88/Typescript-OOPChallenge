@@ -12,6 +12,7 @@ class Cli {
 
   constructor() {
     this.vehicles = loadVehicles();
+    console.log('Loaded vehicles:', this.vehicles);
   }
 
   static generateVin(): string {
@@ -144,6 +145,7 @@ class Cli {
           );
           this.vehicles.push(car);
           saveVehicles(this.vehicles);
+          console.log('Saved vehicles:', this.vehicles);
           writeResponseToFile(`Created Car: ${JSON.stringify(carDetails, null, 2)}`);
           this.startCli();
         });
@@ -217,6 +219,7 @@ class Cli {
           );
           this.vehicles.push(truck);
           saveVehicles(this.vehicles);
+          console.log('Saved vehicles:', this.vehicles);
           writeResponseToFile(`Created Truck: ${JSON.stringify(truckDetails, null, 2)}`);
           this.startCli();
         });
@@ -283,6 +286,7 @@ class Cli {
           );
           this.vehicles.push(motorbike);
           saveVehicles(this.vehicles);
+          console.log('Saved vehicles:', this.vehicles);
           writeResponseToFile(`Created Motorbike: ${JSON.stringify(motorbikeDetails, null, 2)}`);
           this.startCli();
         });
