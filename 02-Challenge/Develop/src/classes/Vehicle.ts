@@ -6,11 +6,17 @@ class Vehicle implements Driveable {
   // Declare properties of the Vehicle class
   started: boolean;
   currentSpeed: number;
+  vin: string;
+  make: string;
+  model: string;
 
   // Constructor for the Vehicle class
-  constructor() {
+  constructor(vin: string, make: string, model: string) {
     this.started = false;
     this.currentSpeed = 0;
+    this.vin = vin;
+    this.make = make;
+    this.model = model;
   }
 
   // Method to print vehicle details
@@ -31,6 +37,7 @@ class Vehicle implements Driveable {
     if (this.started) {
       this.currentSpeed += change;
       console.log(`Vehicle accelerated to ${this.currentSpeed} mph`);
+      console.log(`${this.make} ${this.model} is accelerating by ${change} MPH.`);
     } else {
       console.log('Start the vehicle first');
     }
@@ -42,6 +49,7 @@ class Vehicle implements Driveable {
     if (this.started) {
       this.currentSpeed -= change;
       console.log(`Vehicle decelerated to ${this.currentSpeed} mph`);
+      console.log(`${this.make} ${this.model} is decelerating by ${change} MPH.`);
     } else {
       console.log('Start the vehicle first');
     }
@@ -52,6 +60,7 @@ class Vehicle implements Driveable {
     this.currentSpeed = 0;
     this.started = false;
     console.log('Vehicle stopped');
+    console.log(`${this.make} ${this.model} has stopped.`);
   }
 
   // Method to turn the vehicle
@@ -59,6 +68,7 @@ class Vehicle implements Driveable {
     // Check if the vehicle is started
     if (this.started) {
       console.log(`Vehicle turned ${direction}`);
+      console.log(`${this.make} ${this.model} is turning ${direction}.`);
     } else {
       console.log('Start the vehicle first');
     }
@@ -69,6 +79,7 @@ class Vehicle implements Driveable {
     // Check if the vehicle is started
     if (this.started) {
       console.log('Vehicle reversed');
+      console.log(`${this.make} ${this.model} is reversing.`);
     } else {
       console.log('Start the vehicle first');
     }
