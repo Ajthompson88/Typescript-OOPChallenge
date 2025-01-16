@@ -17,7 +17,8 @@ In this task we are expected to update an eisiting Typescript command-line appli
 You will need node.js and inquirer to run this application
 
 ## Usage
-![Usage Video](./02-Challenge/Develop/assets/usage.mp4)
+
+[📺 Watch the usage demo video](./assets/usage.mp4)
 
 ## Questions
 For any questions, please contact me at:
